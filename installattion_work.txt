@@ -1,0 +1,40 @@
+Make sure NodeJs nmp(node package manager) already installed on the your system
+//--------- Angular Installation -----
+	//-- Installtion using CLI(command line interface)
+		## Install globally on your system
+		> npm install -g @angular/cli
+
+		## Create project folder
+		Move to cd xampp\htdocs\angular
+		> ng new my-first-app
+		
+		-- Move to project folder
+		> cd my-first-app
+
+
+		## Run the project
+		> ng serve
+
+	//-- install bootstrap in the proect
+		npm install --save bootstrap
+
+		//Bootstrap project linking 
+		Go to C:\xampp\htdocs\Angular\my-first-app\angular.json file then
+		"styles": [
+          "src/styles.css",
+          "node_modules/bootstrap/dist/css/bootstrap.css"
+        ],
+
+
+	//-- Create component using cli
+	1)	ng generate component server
+	2)	ng generate component servers
+		OR
+	1)	ng g c server
+	2)	ng g c servers
+
+	component use in C:\xampp\htdocs\angular\my-first-app\src\app\app.component.html file using below syntax:
+	1)	<app-server></app-server>
+	2)	<app-servers></app-servers>
+
+
