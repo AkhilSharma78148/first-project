@@ -22,16 +22,33 @@ Make sure NodeJs nmp(node package manager) already installed on the your system
 		Go to C:\xampp\htdocs\Angular\my-first-app\angular.json file then
 		"styles": [
           "src/styles.css",
-          "node_modules/bootstrap/dist/css/bootstrap.css"
+          "node_modules/bootstrap/dist/css/bootstrap.min.css"
         ],
 
 
+    //-- Firstly Create header component manually
+
 	//-- Create component using cli
-	1)	ng generate component server
-	2)	ng generate component servers
+	1)	ng generate component recipes --spec false
+	Note: 	--spec false means don't need the .spec.ts testing file OR
+			if --spec false not working, try with --skipTests true
+	2)	ng generate component recipes/recipe-detail --skipTests true
+	3)	ng generate component recipes/recipe-list --skipTests true
+	4)	ng generate component recipes/recipe-list/recipe-item --skipTests true
+	5)	ng generate component shopping-list --skipTests true
+	6)	ng generate component shopping-list/shopping-edit --skipTests true
+
 		OR
-	1)	ng g c server
-	2)	ng g c servers
+
+	1)	ng g c recipes --spec false
+	Note: 	--spec false means don't need the .spec.ts testing file OR
+			if --spec false not working, try with --skipTests true
+	2)	ng g c recipes/recipe-detail --skipTests true
+	3)	ng g c recipes/recipe-list --skipTests true
+	4)	ng g c recipes/recipe-list/recipe-item --skipTests true
+	5)	ng g c shopping-list --skipTests true
+	6)	ng g c shopping-list/shopping-edit --skipTests true
+
 
 	component use in C:\xampp\htdocs\angular\my-first-app\src\app\app.component.html file using below syntax:
 	1)	<app-server></app-server>
